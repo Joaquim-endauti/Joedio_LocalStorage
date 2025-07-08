@@ -1,0 +1,84 @@
+
+body {
+    text-align: center;
+}
+.card {
+    margin: 0 auto;
+    margin-top: 150px;
+    float: none; 
+    box-shadow: 0px 0px 5px black;
+}
+button {
+    border-radius: 10px;
+}
+.item.completed span {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0;
+    padding: 5px;
+}
+
+.item span {
+    flex-grow: 1;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.verde {
+    background-color: #28a745;
+    color: white;
+    margin: 0 5px;
+}
+
+.vermelho {
+    background-color: #dc3545;
+    color: white;
+    margin: 0 5px;
+}
+
+.send {
+    background-color: #007bff;
+    color: white;
+}
+
+.sendText {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+.risca_t {
+    background-color: #28a745;
+    color: white;
+}
+.excluir_t {
+    background-color: #dc3545;
+    color: white;
+}
+.dark {
+    width: 150px;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+.lua {
+    width: 30px;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+body.dark-mode .card-header {
+    background-color:#313131;
+    color: white;
+}
+body.dark-mode .card-body {
+    background-color: #313131;
+    color: white;
+}
