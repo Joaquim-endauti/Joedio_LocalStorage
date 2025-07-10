@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const deleteAll = document.querySelector('.excluir_t');
     const riscarAll = document.querySelector('.risca_t');
     const sendButton = document.querySelector('.send');
+    let number = 0;
+    const numbero = document.querySelector ('.number')
     const list = document.querySelector('ul');
     const dark = document.querySelector('.dark');
     // Carrega itens do localStorage ao iniciar
@@ -13,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
     deleteAll.addEventListener('click', function(a) { // Adiciona a possibilidade de excluir todos os itens
         list.innerHTML = '';
         localStorage.removeItem('shoppingList');
+        numbero.textContent = 0
     });
 
     riscarAll.addEventListener('click', function(b) { // Adiciona a possibilidade de riscar todos os itens
@@ -21,13 +24,13 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         saveItems();
     });
-
     sendText.addEventListener('keypress', function(e) { //Adiciona a possibilidade de submete um item com a tecla "Enter"
         if (e.key === 'Enter') {
             addItem();
+            number ++;
+            numbero.textContent = number;
         }
     });
-
     // Alternar entre modo claro e escuro
         dark.addEventListener('click', () => {
        document.body.classList.toggle('dark-mode');

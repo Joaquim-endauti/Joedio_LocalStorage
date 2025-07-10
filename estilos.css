@@ -60,6 +60,12 @@ button {
     background-color: #dc3545;
     color: white;
 }
+.reduzir {
+    background-color: #007bff;
+}
+.aumentar {
+    background-color:#28a745
+}
 .dark {
     width: 150px;
     position: absolute;
